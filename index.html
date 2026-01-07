@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Science</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0b1c2d; /* dark blue */
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction:column ;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 250px;
+      height: 250px;
+      border: 3px solid #ffffff;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    /* Navigation */
+    .nav {
+      margin: 30px 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #0b1c2d;
+      background-color: #ffffff;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* Content */
+    .content {
+      display: flex;
+      gap: 40px;
+    }
+
+    .links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .links li {
+      margin-bottom: 12px;
+    }
+
+    .links li::before {
+      content: "◉ ";
+    }
+
+    .links a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header section -->
+    <div class="header">
+      <div class="logo">
+        <img src="cat.avif" alt="Photo"/>
+      </div>
+      <div class="title-area">
+      <div class="title">Computer Science</div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="nav">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    
+
+    <!-- Main content -->
+    <div class="content">
+      <ul class="links">
+        <li><a href="https://gmail.com">Gmail.com</a></li>
+        <li><a href="https://facebook.com">Facebook.com</a></li>
+        <li><a href="#">09 687 954 241</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</body>
+</html>
